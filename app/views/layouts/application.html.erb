@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 <head>
-  <title>Smallvictories</title>
+  <title>Small Victories</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:100,300' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
 </head>
+
 <body>
 
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo-holder">
+            <a href="./">
+                <svg width="300" height="40">
+                    <image xlink:href="<%= image_path("logo-text-long.svg") %>" src="/<%= image_path("logo-text-long.png") %>" width="300" height="40" alt="Small Victories" />
+                </svg>
+            </a>
+        </div>
+        
+        <div class="nav-holder">
+            <a href="#menu" class="menu-link">
+                <svg width="25" height="25">
+                    <image xlink:href="<%= image_path("menuicon/icon-menu.svg") %>" src="<%= image_path("menuicon/icon-png2x.png") %>" width="25" height="25" alt="Menu icon" />
+                </svg>
+            </a>
+
+            <nav id="menu" role="navigation">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Log in/register</a></li>
+                    <li><%= link_to "My victories", statuses_path %></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+</header>
+
+
 <%= yield %>
+
+<!-- Footer -->
+<footer role="contentinfo">
+    <div class="container">
+        <p><small>Copyright &#169; 2014 Records Sound the Same Ltd.</small></p>
+    </div>
+</footer>
 
 </body>
 </html>

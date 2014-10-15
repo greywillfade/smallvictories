@@ -1,27 +1,18 @@
-<h1>Listing statuses</h1>
+<div class="container">
+<h2>All your victories</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<!-- Loop through victories -->
+<% @statuses.each do |status| %>
+<div class="victory-item">
+  <p><b><%= status.name %></b><br />
+  <%= status.content %></p>
+  <p><%= time_ago_in_words(status.created_at) + ' ago' %></p>
 
-  <tbody>
-    <% @statuses.each do |status| %>
-      <tr>
-        <td><%= status.name %></td>
-        <td><%= status.content %></td>
-        <td><%= link_to 'Show', status %></td>
-        <td><%= link_to 'Edit', edit_status_path(status) %></td>
-        <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <p><%= link_to 'Show', status %> | <%= link_to 'Edit', edit_status_path(status) %> | <%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+</div>
+<% end %>
 
 <br>
 
-<%= link_to 'New Status', new_status_path %>
+<%= link_to 'New victory', new_status_path, class: "primary-button" %>
+</div>

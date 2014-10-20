@@ -18,9 +18,7 @@
     <div class="container">
         <div class="logo-holder">
             <a href="./">
-                <svg width="300" height="40">
-                    <image xlink:href="<%= image_path("logo-text-long.svg") %>" src="/<%= image_path("logo-text-long.png") %>" width="300" height="40" alt="Small Victories" />
-                </svg>
+                Small Victories
             </a>
         </div>
         
@@ -34,7 +32,7 @@
             <nav id="menu" role="navigation">
                 <ul>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Log in/register</a></li>
+                    <li><%= link_to "Log in/register", new_user_session_path %></li>
                     <li><%= link_to "My victories", statuses_path %></li>
                 </ul>
             </nav>
@@ -42,6 +40,8 @@
         
     </div>
 </header>
+
+<p class="notice"><%= notice %></p><p class="alert"><%= alert %></p>
 
 
 <%= yield %>

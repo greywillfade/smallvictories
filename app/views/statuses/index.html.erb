@@ -4,11 +4,11 @@
 <!-- Loop through victories -->
 <% @statuses.each do |status| %>
 <div class="victory-item">
-  <p><b><%= status.name %></b><br />
+  <p><b><%= status.user.full_name %></b><br />
   <%= status.content %></p>
   <p><%= time_ago_in_words(status.created_at) + ' ago' %></p>
 
-  <p><%= link_to 'Show', status %> | <%= link_to 'Edit', edit_status_path(status) %> | <%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Show', status %> | <%= link_to 'Edit', edit_status_path(status) %> | <%= link_to 'Delete', status, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div>
 <% end %>
 

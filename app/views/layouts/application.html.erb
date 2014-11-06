@@ -48,8 +48,10 @@
     </div>
 </header>
 
-<p class="notice"><%= notice %></p><p class="alert"><%= alert %></p>
 
+<% flash.each do |type, message| %>
+<p class="module <%= flash_class type %>"><%= message %></p>
+<% end %>
 
 <%= yield %>
 

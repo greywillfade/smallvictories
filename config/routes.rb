@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   #devise_for :users
+
+  get '/home', to: 'pages#home', as: :homepage
+  get '/about', to: 'pages#about', as: :aboutpage
+    get '/credits', to: 'pages#credits', as: :creditspage
+
+
   devise_for :users, :controllers => {:registrations => "users/registrations"}
 
   devise_scope :user do
@@ -12,8 +18,7 @@ Rails.application.routes.draw do
 
   get 'feed', to: 'statuses#index', as: :feed
 
-
-  root to: 'statuses#index' #Nothing in the path - index
+  root to: 'pages#home' #Nothing in the path - index
 
 
   

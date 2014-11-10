@@ -1,7 +1,8 @@
 $(document).ready(function() {
-
-	//Navigation actions
+	
     $('body').addClass('js');
+
+    //Navigation actions
     var $menu = $('#menu'),
     $menulink = $('.menu-link');
   

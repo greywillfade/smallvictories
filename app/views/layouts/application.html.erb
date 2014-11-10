@@ -31,7 +31,7 @@
 
             <nav id="menu" role="navigation">
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><%= link_to "About", aboutpage_path %></li>
                     
                     <% if user_signed_in? %>
                       <li><%= link_to "My victories", feed_path %></li>
@@ -44,21 +44,21 @@
                 </ul>
             </nav>
         </div>
-        
     </div>
 </header>
 
-
 <% flash.each do |type, message| %>
-<p class="module <%= flash_class type %>"><%= message %></p>
+  <!-- Notifications -->
+  <p class="module <%= flash_class type %> flash-notification"><%= message %></p>
 <% end %>
+
 
 <%= yield %>
 
 <!-- Footer -->
 <footer role="contentinfo">
     <div class="container">
-        <p><small>Copyright &#169; 2014 Records Sound the Same Ltd.</small></p>
+        <p><small>Copyright &#169; 2014 Records Sound the Same Ltd. | <%= link_to "Credits", creditspage_path %></small></p>
     </div>
 </footer>
 

@@ -1,5 +1,3 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
   content: MyText
   user: testsally
@@ -7,3 +5,7 @@ one:
 two:
   content: MyText
   user: testsally
+
+three:
+  content: "This is a status update"
+  user: otheruser

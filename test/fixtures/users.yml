@@ -3,3 +3,9 @@ testsally:
    last_name: "Jenkinson"
    email: "testsally@gmail.com"
    profile_name: "sjenkinson"
+
+otheruser:
+   first_name: "Evil"
+   last_name: "Sally"
+   email: "testsally2@gmail.com"
+   profile_name: "evilsj"

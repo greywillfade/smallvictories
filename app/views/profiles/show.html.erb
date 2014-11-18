@@ -1,2 +1,14 @@
-<h1>Profiles#show</h1>
-<p>Find me in app/views/profiles/show.html.erb</p>
+<img src="<%= image_path("hdr-cupcakes2.jpg") %>" alt="Cupcakes header" />
+
+<div class="container">
+	<h1><%= @user.full_name%></h1>
+
+	<% if @statuses %>
+		<% @statuses.each do |status| %>
+			<div>
+				<p><%= status.content %></p>
+				<p><%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago</p>
+			</div>
+		<% end %>
+	<% end %>
+</div>

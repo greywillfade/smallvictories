@@ -1130,7 +1130,7 @@ nav[role=navigation] {
   max-height: 0; }
 
 nav[role=navigation].active {
-  max-height: 35em; }
+  max-height: 55em; }
 
 nav[role=navigation] ul {
   margin: 3em 0 0 0;
@@ -1447,4 +1447,22 @@ label.check + .caption,
     margin-right: 2em; }
 
   .sub-col {
-    width: 35%; } }
+    width: 35%; }
+}
+
+
+
+.col3-group > div {
+  padding: 1em 1em 0;
+  background-color: $lightestgrey;
+}
+
+@media screen and (min-width: 50em) {
+  .col3-group {
+    overflow: hidden;
+  }
+  .col3-group > div {
+    float: left;
+    width: 33.333333%;
+  }
+}    

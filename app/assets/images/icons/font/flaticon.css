@@ -1,0 +1,71 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 03/02/2016 12:45
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-poll-and-contest-linear-1-109742:before { content: "\f100"; }
+.flaticon-poll-and-contest-linear-10-109751:before { content: "\f101"; }
+.flaticon-poll-and-contest-linear-109741:before { content: "\f102"; }
+.flaticon-poll-and-contest-linear-11-109752:before { content: "\f103"; }
+.flaticon-poll-and-contest-linear-12-109753:before { content: "\f104"; }
+.flaticon-poll-and-contest-linear-13-109754:before { content: "\f105"; }
+.flaticon-poll-and-contest-linear-14-109755:before { content: "\f106"; }
+.flaticon-poll-and-contest-linear-15-109756:before { content: "\f107"; }
+.flaticon-poll-and-contest-linear-16-109757:before { content: "\f108"; }
+.flaticon-poll-and-contest-linear-17-109758:before { content: "\f109"; }
+.flaticon-poll-and-contest-linear-18-109759:before { content: "\f10a"; }
+.flaticon-poll-and-contest-linear-19-109760:before { content: "\f10b"; }
+.flaticon-poll-and-contest-linear-2-109743:before { content: "\f10c"; }
+.flaticon-poll-and-contest-linear-20-109761:before { content: "\f10d"; }
+.flaticon-poll-and-contest-linear-21-109762:before { content: "\f10e"; }
+.flaticon-poll-and-contest-linear-22-109763:before { content: "\f10f"; }
+.flaticon-poll-and-contest-linear-23-109764:before { content: "\f110"; }
+.flaticon-poll-and-contest-linear-24-109765:before { content: "\f111"; }
+.flaticon-poll-and-contest-linear-25-109766:before { content: "\f112"; }
+.flaticon-poll-and-contest-linear-26-109767:before { content: "\f113"; }
+.flaticon-poll-and-contest-linear-27-109768:before { content: "\f114"; }
+.flaticon-poll-and-contest-linear-28-109769:before { content: "\f115"; }
+.flaticon-poll-and-contest-linear-29-109770:before { content: "\f116"; }
+.flaticon-poll-and-contest-linear-3-109744:before { content: "\f117"; }
+.flaticon-poll-and-contest-linear-30-109771:before { content: "\f118"; }
+.flaticon-poll-and-contest-linear-31-109772:before { content: "\f119"; }
+.flaticon-poll-and-contest-linear-32-109773:before { content: "\f11a"; }
+.flaticon-poll-and-contest-linear-33-109774:before { content: "\f11b"; }
+.flaticon-poll-and-contest-linear-34-109775:before { content: "\f11c"; }
+.flaticon-poll-and-contest-linear-35-109776:before { content: "\f11d"; }
+.flaticon-poll-and-contest-linear-36-109777:before { content: "\f11e"; }
+.flaticon-poll-and-contest-linear-37-109778:before { content: "\f11f"; }
+.flaticon-poll-and-contest-linear-38-109779:before { content: "\f120"; }
+.flaticon-poll-and-contest-linear-39-109780:before { content: "\f121"; }
+.flaticon-poll-and-contest-linear-4-109745:before { content: "\f122"; }
+.flaticon-poll-and-contest-linear-5-109746:before { content: "\f123"; }
+.flaticon-poll-and-contest-linear-6-109747:before { content: "\f124"; }
+.flaticon-poll-and-contest-linear-7-109748:before { content: "\f125"; }
+.flaticon-poll-and-contest-linear-8-109749:before { content: "\f126"; }
+.flaticon-poll-and-contest-linear-9-109750:before { content: "\f127"; }

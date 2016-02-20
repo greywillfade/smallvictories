@@ -2,7 +2,7 @@
 <html lang="en-gb">
 <head>
   <title>Small Victories</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:100,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:100,300|Didact+Gothic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,11 +13,80 @@
 
 <body>
 
+<div id="header-wrapper">
+  <div id="header" class="container">
+
+    <div id="logo">
+      <h1><a href="<%= root_path %>">Small Victories</a></h1>
+    </div>
+    <!--<div id="menu">
+      <ul>
+        <li class="active"><a href="#" accesskey="1" title="">Home</a></li>
+        <li><a href="#" accesskey="2" title="">Our Clients</a></li>
+        <li><a href="#" accesskey="3" title="">About Us</a></li>
+        <li><a href="#" accesskey="4" title="">Careers</a></li>
+        <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+      </ul>
+    </div>-->
+
+    <div class="nav-holder">
+      <a href="#menu" class="menu-link">
+          <svg width="25" height="25">
+              <image xlink:href="<%= image_path("menuicon/icon-menu.svg") %>" src="<%= image_path("menuicon/icon-png2x.png") %>" width="25" height="25" alt="Menu icon" />
+          </svg>
+      </a>
+
+      <nav id="menu" role="navigation">
+          <ul>
+              <% if user_signed_in? %>
+                <li><%= link_to "Dashboard", dashboard_path %></li>
+                <li><%= link_to "My victories", root_url + current_user.profile_name %></li>
+                <li><%= link_to "Others", feed_path %></li>
+                <li><%= link_to "Log out", logout_path %></li>
+                <li>
+                  <a href="<%= edit_user_registration_path %>">
+                  <svg width="25" height="25">
+                    <image xlink:href="<%= image_path("cog/settings.svg") %>" src="<%= image_path("cog/settings.png") %>" width="25" height="25" alt="Settings" />
+                  </svg>
+                  </a>
+                </li>
+              <% else %>
+                <li><%= link_to "Log in", login_path %></li>
+                <li><%= link_to "Register", register_path %></li>
+              <% end %>
+          </ul>
+      </nav>
+    </div>
+  </div>
+
+<% if current_page?(root_path) %>
+  <div id="banner" class="container">
+    <div class="title">
+    <svg width="100" height="100">
+      <image xlink:href="<%= image_path("logo/king-crown.svg") %>" src="<%= image_path("logo/king-crown.png") %>" width="100" height="100" alt="Small Victories logo" />
+    </svg>
+      <h2>Sometimes it's the little things that matter</h2>
+      <span class="byline">Keep track of and celebrate the small victories in your personal life &amp; career</span>
+    </div>
+    <ul class="actions">
+      <%= link_to 'Log your victories', register_path, html_options = { class: 'button' } %>
+    </ul>
+  </div>
+<% end %>
+
+</div>
+
+
+
+
+
+
 <!-- Header -->
+<!--
 <header>
     <div class="container">
         <div class="logo-holder">
-            <a href="./">Small Victories</a>
+            <a href="<%= root_path %>">Small Victories</a>
         </div>
         
         <div class="nav-holder">
@@ -29,12 +98,20 @@
 
             <nav id="menu" role="navigation">
                 <ul>
-                    <li><%= link_to "About", aboutpage_path %></li>
+                    <li></li>
                     
                     <% if user_signed_in? %>
-                      <li><%= link_to "My victories", feed_path %></li>
-                      <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+                      <li><%= link_to "Dashboard", dashboard_path %></li>
+                      <li><%= link_to "My victories", root_url + current_user.profile_name %></li>
+                      <li><%= link_to "Others", feed_path %></li>
                       <li><%= link_to "Log out", logout_path %></li>
+                      <li>
+                        <a href="<%= edit_user_registration_path %>">
+                        <svg width="25" height="25">
+                          <image xlink:href="<%= image_path("cog/settings.svg") %>" src="<%= image_path("cog/settings.png") %>" width="25" height="25" alt="Settings" />
+                        </svg>
+                        </a>
+                      </li>
                     <% else %>
                       <li><%= link_to "Log in", login_path %></li>
                       <li><%= link_to "Register", register_path %></li>
@@ -44,6 +121,7 @@
         </div>
     </div>
 </header>
+-->
 
 <% flash.each do |type, message| %>
   <!-- Notifications -->
@@ -54,9 +132,9 @@
 <%= yield %>
 
 <!-- Footer -->
-<footer role="contentinfo">
-    <div class="container">
-        <p><small>Copyright &#169; 2014 Records Sound the Same Ltd. | <%= link_to "Credits", creditspage_path %></small></p>
+<footer role="contentinfo" style="background-color:#ED757A;">
+    <div id="copyright" class="container">
+      <p><small>&copy; 2016 <a href="http://recordssoundthesame.com">Records Sound the Same</a> | <%= link_to "Credits", creditspage_path %> | <%= link_to "About", aboutpage_path %></small></p>
     </div>
 </footer>
 

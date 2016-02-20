@@ -1,30 +1,56 @@
-<img src="<%= image_path("hdr-cupcakes2.jpg") %>" alt="Cupcakes header" />
+<div id="welcome">
+  <div class="container">
+    <div class="title">
+      <h2>Don't wait for big, life-changing moments</h2>
+      <span class="byline">Your small victories all add up</span>
+    </div>
+    <p>Small Victories is a way of simply recording all of the little successes that you have, helping you to mark life's little wins that could otherwise fall by the wayside. They'll be stored here, ready to remind you of all of the great things you've achieved should you ever need a pick-me-up.</p>
 
-<div class="emph-holder">
-	<div class="container">
-		<h1>Keep track of, and celebrate the small victories in your personal life &amp; career. Sometimes it's the little things that matter.</h1>
+    <img src="https://placehold.it/800x600" />
+
+  </div>
+</div>
+
+
+<div class="whitewrap">
+  <div class="three-column container">
+
+	<div class="title">
+		<h2>It's all too easy to get bogged down with life</h2>
+		<span class="byline">Don't focus on the bad; remember the many good things that happen on a daily basis</span>
 	</div>
+
+  	<ul class="flex-list">
+	    <li class="flex-list-item">
+	    <div class="flex-list-content">
+	        <svg width="75" height="75" class="iconspacing">
+			<image xlink:href="<%= image_path("icons/pink/check-square.svg") %>" src="<%= image_path("icons/pink/check-square.png") %>" width="75" height="75" alt="Ticked box icon" />
+			</svg>
+			<h3>Mark your achievements</h3>
+			<p> We often don't have the time to celebrate our achivements, but we should. Take a moment to appreciate what you've done; eat a cake; mark the occasion and log it here.</p>
+	    </div>
+	    </li>
+
+	    <li class="flex-list-item">
+	    <div class="flex-list-content">
+	        <svg width="75" height="75" class="iconspacing">
+			<image xlink:href="<%= image_path("icons/pink/favourite-heart.svg") %>" src="<%= image_path("icons/pink/favourite-heart.png") %>" width="75" height="75" alt="Heart icon" />
+			</svg>
+			<h3>Think positively</h3>
+			<p>A lot of us suffer from <a href="http://en.wikipedia.org/wiki/Negativity_bias">negativity bias</a>, where we lend more weight to negative experiences than positive ones. Surround yourself with little bits of happiness.</p>
+	    </div>
+	    </li>
+
+	    <li class="flex-list-item">
+	    <div class="flex-list-content">
+	        <svg width="75" height="75" class="iconspacing">
+			<image xlink:href="<%= image_path("icons/pink/podium.svg") %>" src="<%= image_path("icons/pink/podium.png") %>" width="75" height="75" alt="Podium icon" />
+			</svg>
+			<h3>Look back over your year</h3>
+			<p>We often look back at the big moments, but the little wins again often get forgotten. Small Victories can show you just how far you've come.</p>
+	    </div>
+	    </li>
+    </ul>
+
+  </div>
 </div>
-
-<div class="container">
-
-	<p>Small Victories is a way of simply recording all of the little successes that you have, helping you to mark life's little wins that could otherwise fall by the wayside. They'll be stored here, ready to remind you of all of the great things you've achieved should you ever need a pick-me up.</p>
-
-	<h2>Mark your achievements</h2>
-	<p><img class="pull-right" src="http://lorempixel.com/400/300/abstract/3" alt="" />
-	It's all too easy to get bogged down in life, forgetting the good things that happen to us on a daily basis. A lot of us suffer from <a href="http://en.wikipedia.org/wiki/Negativity_bias">negativity bias</a>, where we lend more weight to negative experiences than positive ones. We also often don't have the time to celebrate our achivements, but we should. Take a moment to appreciate what you've done; eat a cake; mark the occasion and log it here.</p>
-
-	<h2>Look back over your year</h2>
-	<p>At different points throughout our lives we often look back at the big moments, but the little wins again often get forgotten. Small Victories can allow you to see an overview of your year, and will show you just how far you've come.</p>
-
-	<h2>Private vs public</h2>
-	<p>Rather than humble bragging your way through your social networks, be brazen - share your victories in public. Or if you'd rather keep them all to yourself that's ok too.
-
-	<h2>You own your data</h2>
-	<p>Export your victories at any time, and take them away if you leave. They're yours, not ours, and we want to keep it that way.</p>
-</div>
-
-<div class="cta">
-	<%= link_to 'Register now', register_path, html_options = { class: 'primary-button' } %>
-</div>
-

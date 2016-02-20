@@ -1,0 +1,35 @@
+<div class="container">
+	<h2>Dashboard</h2>
+
+	<%= link_to 'New victory', new_status_path, class: "primary-button" %>
+
+	<!-- Loop through victories -->
+	<div class="col3-group group">
+	<% @dashstatuses.each do |status| %>
+
+	<div class="victory-item">
+		<p><b><a href="/<%= status.user.profile_name %>"><%= status.user.full_name %></a></b><br />
+		<%= status.content %></p>
+		<p><%= time_ago_in_words(status.created_at) + ' ago' %></p>
+
+		<%# if current_user == status.user %>
+		<% if can? :update, status %>
+	    	<%= link_to 'Edit', edit_status_path(status) %>
+	    <% end %>
+
+	    <% if can? :delete, status %>
+	    	<%= link_to 'Delete', status, method: :delete, data: { confirm: 'Are you sure?' } %>
+	    <% end %>
+
+		<p><%= link_to 'Show', status %></p>
+	</div>
+
+	<% end %>
+	</div>
+
+	<%= will_paginate @dashstatuses %>
+
+	<%= link_to 'New victory', new_status_path, class: "primary-button" %>
+
+
+</div>

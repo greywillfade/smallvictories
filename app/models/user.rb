@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 	}
 
 
-	has_many :statuses
+	has_many :statuses, dependent: :destroy
 
 	#Custom method to return full name
 	def full_name

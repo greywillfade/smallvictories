@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+
+  get '/dashboard', to: 'profiles#dashboard', as: :dashboard
+
+
   get 'profiles/show'
 
   #devise_for :users
 
   get '/home', to: 'pages#home', as: :homepage
   get '/about', to: 'pages#about', as: :aboutpage
-    get '/credits', to: 'pages#credits', as: :creditspage
+  get '/credits', to: 'pages#credits', as: :creditspage
 
 
   devise_for :users, :controllers => {:registrations => "users/registrations"}
@@ -22,6 +26,8 @@ Rails.application.routes.draw do
   root to: 'pages#home' #Nothing in the path - index
 
   get '/:id', to: 'profiles#show'
+
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.

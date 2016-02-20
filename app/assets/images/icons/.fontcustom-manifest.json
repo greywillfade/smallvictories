@@ -1,0 +1,208 @@
+{
+  "checksum": {
+    "previous": "624b3ff0dec18b41454166e2597750864ab94887e41336163d289c4166f60253",
+    "current": "624b3ff0dec18b41454166e2597750864ab94887e41336163d289c4166f60253"
+  },
+  "fonts": [
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/Flaticon.ttf",
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/Flaticon.svg",
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/Flaticon.woff",
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/Flaticon.eot"
+  ],
+  "glyphs": {
+    "poll-and-contest-linear-1-109742": {
+      "codepoint": 61696,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-1-109742.svg"
+    },
+    "poll-and-contest-linear-10-109751": {
+      "codepoint": 61697,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-10-109751.svg"
+    },
+    "poll-and-contest-linear-109741": {
+      "codepoint": 61698,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-109741.svg"
+    },
+    "poll-and-contest-linear-11-109752": {
+      "codepoint": 61699,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-11-109752.svg"
+    },
+    "poll-and-contest-linear-12-109753": {
+      "codepoint": 61700,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-12-109753.svg"
+    },
+    "poll-and-contest-linear-13-109754": {
+      "codepoint": 61701,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-13-109754.svg"
+    },
+    "poll-and-contest-linear-14-109755": {
+      "codepoint": 61702,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-14-109755.svg"
+    },
+    "poll-and-contest-linear-15-109756": {
+      "codepoint": 61703,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-15-109756.svg"
+    },
+    "poll-and-contest-linear-16-109757": {
+      "codepoint": 61704,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-16-109757.svg"
+    },
+    "poll-and-contest-linear-17-109758": {
+      "codepoint": 61705,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-17-109758.svg"
+    },
+    "poll-and-contest-linear-18-109759": {
+      "codepoint": 61706,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-18-109759.svg"
+    },
+    "poll-and-contest-linear-19-109760": {
+      "codepoint": 61707,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-19-109760.svg"
+    },
+    "poll-and-contest-linear-2-109743": {
+      "codepoint": 61708,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-2-109743.svg"
+    },
+    "poll-and-contest-linear-20-109761": {
+      "codepoint": 61709,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-20-109761.svg"
+    },
+    "poll-and-contest-linear-21-109762": {
+      "codepoint": 61710,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-21-109762.svg"
+    },
+    "poll-and-contest-linear-22-109763": {
+      "codepoint": 61711,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-22-109763.svg"
+    },
+    "poll-and-contest-linear-23-109764": {
+      "codepoint": 61712,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-23-109764.svg"
+    },
+    "poll-and-contest-linear-24-109765": {
+      "codepoint": 61713,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-24-109765.svg"
+    },
+    "poll-and-contest-linear-25-109766": {
+      "codepoint": 61714,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-25-109766.svg"
+    },
+    "poll-and-contest-linear-26-109767": {
+      "codepoint": 61715,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-26-109767.svg"
+    },
+    "poll-and-contest-linear-27-109768": {
+      "codepoint": 61716,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-27-109768.svg"
+    },
+    "poll-and-contest-linear-28-109769": {
+      "codepoint": 61717,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-28-109769.svg"
+    },
+    "poll-and-contest-linear-29-109770": {
+      "codepoint": 61718,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-29-109770.svg"
+    },
+    "poll-and-contest-linear-3-109744": {
+      "codepoint": 61719,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-3-109744.svg"
+    },
+    "poll-and-contest-linear-30-109771": {
+      "codepoint": 61720,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-30-109771.svg"
+    },
+    "poll-and-contest-linear-31-109772": {
+      "codepoint": 61721,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-31-109772.svg"
+    },
+    "poll-and-contest-linear-32-109773": {
+      "codepoint": 61722,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-32-109773.svg"
+    },
+    "poll-and-contest-linear-33-109774": {
+      "codepoint": 61723,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-33-109774.svg"
+    },
+    "poll-and-contest-linear-34-109775": {
+      "codepoint": 61724,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-34-109775.svg"
+    },
+    "poll-and-contest-linear-35-109776": {
+      "codepoint": 61725,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-35-109776.svg"
+    },
+    "poll-and-contest-linear-36-109777": {
+      "codepoint": 61726,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-36-109777.svg"
+    },
+    "poll-and-contest-linear-37-109778": {
+      "codepoint": 61727,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-37-109778.svg"
+    },
+    "poll-and-contest-linear-38-109779": {
+      "codepoint": 61728,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-38-109779.svg"
+    },
+    "poll-and-contest-linear-39-109780": {
+      "codepoint": 61729,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-39-109780.svg"
+    },
+    "poll-and-contest-linear-4-109745": {
+      "codepoint": 61730,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-4-109745.svg"
+    },
+    "poll-and-contest-linear-5-109746": {
+      "codepoint": 61731,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-5-109746.svg"
+    },
+    "poll-and-contest-linear-6-109747": {
+      "codepoint": 61732,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-6-109747.svg"
+    },
+    "poll-and-contest-linear-7-109748": {
+      "codepoint": 61733,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-7-109748.svg"
+    },
+    "poll-and-contest-linear-8-109749": {
+      "codepoint": 61734,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-8-109749.svg"
+    },
+    "poll-and-contest-linear-9-109750": {
+      "codepoint": 61735,
+      "source": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg/poll-and-contest-linear-9-109750.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".flaticon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "Flaticon",
+    "force": false,
+    "input": {
+      "templates": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg",
+      "vectors": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/svg"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font",
+      "fonts": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font",
+      "preview": "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font"
+    },
+    "preprocessor_path": null,
+    "quiet": true,
+    "templates": [
+      "../../../../../gr_beta_agustin/flaticon/libraries/webfont/templates/flaticon.html",
+      "../../../../../gr_beta_agustin/flaticon/libraries/webfont/templates/_flaticon.scss",
+      "../../../../../gr_beta_agustin/flaticon/libraries/webfont/templates/flaticon.css"
+    ]
+  },
+  "templates": [
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/flaticon.html",
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/_flaticon.scss",
+    "/var/www/static/flaticon/zip_packs/112153-poll-and-contest-linear/font/flaticon.css"
+  ]
+}

@@ -1,13 +1,11 @@
+<div class="profile-header">
+	<svg width="100" height="100">
+	<image xlink:href="<%= image_path("logo/king-crown.svg") %>" src="<%= image_path("logo/king-crown.png") %>" width="100" height="100" alt="Small Victories logo" />
+	</svg>
+	<h2><%= @user.full_name%></h2>
 
-
-	<div class="profile-header">
-		<svg width="100" height="100">
-		<image xlink:href="<%= image_path("logo/king-crown.svg") %>" src="<%= image_path("logo/king-crown.png") %>" width="100" height="100" alt="Small Victories logo" />
-		</svg>
-		<h2><%= @user.full_name%></h2>
-
-		<%= link_to 'New victory', new_status_path, class: "button" %>
-	</div>
+	<%= link_to 'New victory', new_status_path, class: "button" %>
+</div>
 
 <div class="whitewrap">
 <div class="container">
@@ -45,30 +43,11 @@
 				</div>
 			</div>
 
-			<!--
-			<div>
-				<p><%= status.content %></p>
-				<p><%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago</p>
-			</div>
-
-			<% if can? :update, status %>
-		    	<%= link_to 'Edit', edit_status_path(status) %>
-		    <% end %>
-
-		    <% if can? :delete, status %>
-		    	<%= link_to 'Delete', status, method: :delete, data: { confirm: 'Are you sure?' } %>
-		    <% end %>
-
-		    <hr />-->
-
 		<% end %>
 		</div>
 
 		<%= will_paginate @statuses %>
-
-
 	<% end %>
 
-		
 </div>
 </div>

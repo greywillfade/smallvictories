@@ -17,6 +17,11 @@ gem 'coffee-rails', '~> 4.0.0'
 #Custom gems used
 gem 'devise'
 gem 'simple_form'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'figaro'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,6 +37,8 @@ gem 'spring',        group: :development
 
 gem 'will_paginate'
 gem 'cancan' #authorization library
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

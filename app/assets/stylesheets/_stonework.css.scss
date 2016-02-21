@@ -356,74 +356,6 @@ a:hover {
 		color: rgba(0,0,0,.8);
 	}
 		
-/*********************************************************************************/
-/* 4-column                                                                      */
-/*********************************************************************************/
-
-	.box1,
-	.box2,
-	.box3,
-	.box4
-	{
-		width: 235px;
-	}
-	
-	.box1,
-	.box2,
-	.box3,
-	{
-		float: left;
-		margin-right: 20px;
-	}
-	
-	.box4
-	{
-		float: right;
-	}
-	
-/*********************************************************************************/
-/* 3-column                                                                      */
-/*********************************************************************************/
-
-	.boxA,
-	.boxB,
-	.boxC
-	{
-		width: 384px;
-	}
-
-	.boxA,
-	.boxB
-	{
-		float: left;
-		margin-right: 20px;
-	}
-	
-	.boxC
-	{
-		float: right;
-	}
-
-/*********************************************************************************/
-/* 2-column                                                                      */
-/*********************************************************************************/
-
-	.tbox1,
-	.tbox2
-	{
-		width: 575px;
-	}
-	
-	.tbox1
-	{
-		float: left;
-	}
-
-	.tbox2
-	{
-		float: right;
-	}
-
 	
 /*********************************************************************************/
 /* Heading Titles                                                                */
@@ -473,45 +405,20 @@ a:hover {
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header-wrapper
+	.header-wrapper
 	{
 		position: relative;
-		padding: 2em 0em 7em 0em;
+		padding: 2em auto 4em;
 		background-color: #111111;
 		background-image: image-url("cupcakes-dark.jpg");
 		background-repeat: no-repeat center;
 		background-size: cover;
 	}
 
-	#header
-	{
-		position: relative;
-		padding: 2em 0em;
+	.header-shortimg {
+		background-image: image-url("small-cupcakes-bw.jpg");
 	}
 
-
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
-
-	#logo
-	{
-		position: absolute;
-		top: 3.6em;
-		left: 0;
-	}
-	
-	#logo h1
-	{
-		font-size: 2.6em;
-		color: #79C255;
-	}
-	
-	#logo a
-	{
-		text-decoration: none;
-		color: rgba(255,255,255,1);
-	}
 
 /*********************************************************************************/
 /* Flexbox                                                                          */
@@ -560,60 +467,284 @@ a:hover {
 	width: 100%;
 }
 
+
+/*********************************************************************************/
+/* Logo and navigation                                                           */
+/*********************************************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+header > div#logo {
+    line-height: 70px;
+    position: relative;
+}
+    
+header > div#logo > h1 {
+    text-transform: lowercase;
+    font-size: 2em;
+}
+
+header > div#logo > h1 a {
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+header > div#logo > div#navToggle {
+    position: absolute;
+    right: 0;
+    top: 0.7em;
+    text-align: right;
+    transition: 300ms all ease;
+}
+
+header > div#logo > div#navToggle > a {
+    display: block;
+    text-decoration: none;
+    transition: 300ms all ease;
+}
+
+header > nav {
+    display: none;
+    flex: 1;
+    transform: 300ms all ease;
+}
+    
+header nav > ul {
+	list-style-type: none;    
+}
+
+header nav > ul > li {
+	border-bottom: 1px solid white;
+	position: relative;
+}
+
+header nav > ul > li:last-of-type {
+    border-bottom: none;    
+}
+
+header nav > ul > li > a {
+    display: block;
+    padding: 1.5em 0;
+    text-decoration: none;
+    transition: 250ms all ease;
+    letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.80);
+}
+
+header nav > ul > li > a span.toggle {
+	background-color: white;
+	border-radius: 3rem;
+	color: $darkgrey;
+	font-size: 0.75em;
+	font-weight: 500;
+	padding: 2px 8px;
+	text-transform: lowercase;	
+}
+
+header nav > ul > li > a span.caret {
+    display: none;
+}
+
+header > nav > ul > li:hover > a,
+header > nav > ul > li > nav > ul > li:hover > a {
+    color: $pinkhighlight; 
+}
+
+header > nav > ul > li > nav {
+	background-color: #333;
+	border-radius: 1em;
+	box-shadow: 0 2px 8px rgba(0,0,0,.6);
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	right: 5%;
+	width: 90%;
+	z-index: 100;
+	padding: 1em;
+}
+
+header > nav > ul > li > nav > ul > li > a {
+    color: rgba(255,255,255,.85);
+    transition: 300ms all ease;
+}
+
+/* Larger screens */
+@media all and (min-width: 50em) {
+	header > div#logo > div#navToggle {
+	    display: none;    
+	}
+    
+    header {
+        flex-direction: row;
+        line-height: 5em;
+        text-align: left;
+		width: 100%;
+    }
+    
+    header > div#logo > h1 {
+        font-size: 2.6em;
+    }
+            
+    header > nav {
+        background-color: transparent;
+        display: block;
+    }
+    
+    header > nav > ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;    
+    }
+        
+    header nav > ul > li {
+        border-bottom: none;
+    }
+    
+    header nav > ul > li > a {
+        padding: 0 1.25rem;
+    }
+					
+	header nav > ul > li > a span.toggle {
+		display: none;	
+	}
+					
+	header nav > ul > li > a span.caret {
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid rgba(0,0,0,.65);
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+		border-radius: 1px;
+		content: "";
+		display: inline-block;
+		height: 0;
+		margin: 0 0 0 .25rem;
+		transition: 250ms all ease;
+		width: 0;
+		vertical-align: middle;
+	}
+					
+	header nav > ul > li:hover > a span.caret {
+		border-top-color: rgb(140, 193, 193);
+		transform: rotate(270deg); 
+	}
+    
+    header > nav > ul > li:hover > nav {
+        background-color: rgb(51,51,51);
+        border-radius: .25em;
+        box-shadow: 0 2px 8px rgba(0,0,0,.6);
+        display: block;
+        line-height: 3em;
+        right: -50%;
+        width: 196px;
+    }
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+/*
+#logo {
+	position: relative;
+	top: 3em;
+	left: 0;
+}
+
+.logo-holder {
+  width: 100%;
+  float: left; }
+
+.logo-holder h1 {
+	font-size: 2em;
+	color: #79C255;
+}
+
+.logo-holder a {
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+@media screen and (min-width: 41em) {
+	.logo-holder {
+		width: 300px;
+		float: left;
+	}
+
+    .logo-holder h1 {
+		font-size: 2.6em;
+	}
+}
+*/
+
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
 
-	#menu
-	{
-		position: absolute;
-		top: 4.5em;
-		right: 0;
+/*
+.nav-holder {
+	text-align: right;
+	width: 100%;
+	float: right;
+	margin-top: -3.2em;
+}
+
+@media screen and (min-width: 55em) {
+
+	.nav-holder {
+		width: calc(100% - 300px);
+		margin-top: 1em;
 	}
-	
-	#menu ul
-	{
-		display: inline-block;
-	}
-	
-	#menu li
-	{
-		display: block;
-		float: left;
-		text-align: center;
-	}
-	
-	#menu li a, #menu li span
-	{
-		padding: 1em 1.5em;
-		letter-spacing: 1px;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		color: rgba(255,255,255,0.80);
-	}
-	
-	#menu li:hover a, #menu li.active a, #menu li.active span
-	{
-	}
-	
-	#menu .active a
-	{
-		border: 2px solid rgba(255,255,255,1);
-		border-radius: 6px;
-		color: rgba(255,255,255,1);
-	}
-	
-	#menu .icon
-	{
-	}
+}
+
+#menu ul {
+	display: inline-block;
+}
+
+#menu li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span {
+	padding: 1em 1.5em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.80);
+}
+*/
+
+#menu li:hover a, #menu li.active a, #menu li.active span {
+	/*border: 2px solid rgba(255,255,255,1);
+	border-radius: 6px;
+	color: rgba(255,255,255,1);*/
+	color: $white;
+	font-weight: bold;
+}
+
+/*
+#menu .active a {
+	border: 2px solid rgba(255,255,255,1);
+	border-radius: 6px;
+	color: rgba(255,255,255,1);
+}
 
 
-	/* Main navigation */
-a.menu-link {
+
+a.menu-link { //Icon
   float: right;
   display: block;
-  border: none; }
+  border: none;
+  margin-top: 1.4em;
+}
 
 nav[role=navigation] {
   clear: both;
@@ -638,32 +769,25 @@ nav[role=navigation] ul {
   padding: 0; }
 
 nav[role=navigation] li {
-  margin: 0; }
+	margin: 0;
+	width: 100%;
+}
 
 nav[role=navigation] li a {
-	/*display: block;
-	padding: 0.7em;
+
+	display: block;
 	width: 100%;
 	float: left;
-	border: none;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-family: "Raleway", sans-serif;
-	color: $darkgrey;
-	letter-spacing: 0.05em;
-	font-size: 0.95em;
-	border-top: 1px solid white;
-	*/
 	padding: 1em 1.5em;
-	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.8em;
 	color: rgba(255,255,255,0.80);
+	border: none;
 	border-top: 1px solid white;
 }
 
-@media screen and (min-width: 41em) {
+@media screen and (min-width: 55em) {
 	a.menu-link {
 		display: none; }
 
@@ -671,12 +795,13 @@ nav[role=navigation] li a {
 		max-height: none; }
 
 	nav[role=navigation] ul {
-		margin: 0 0 0 -0.25em;
+		margin: 0 0 0 0;
 		border: 0;
 		text-align: right; }
 
 	nav[role=navigation] li {
 		display: inline-block;
+		width: auto;
 		margin: 0 0.25em; }
 
 	nav[role=navigation] li a {
@@ -696,6 +821,7 @@ nav[role=navigation] li a {
 	}
 }
 
+*/
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/

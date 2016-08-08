@@ -28,11 +28,11 @@
     <nav>
         <ul>
             <% if user_signed_in? %>
-                <li><%= link_to "Dashboard", dashboard_path %></li>
+                
                 <li><%= link_to "My victories", root_url + current_user.profile_name %></li>
                 <li><%= link_to "Others", feed_path %></li>
                 <li><%= link_to "Log out", logout_path %></li>
-                <li>
+                <li class="menu-svg">
                   <a href="<%= edit_user_registration_path %>">
                   <svg width="25" height="25">
                     <image xlink:href="<%= image_path("cog/settings.svg") %>" src="<%= image_path("cog/settings.png") %>" width="25" height="25" alt="Settings"></image>

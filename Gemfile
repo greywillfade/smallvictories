@@ -22,6 +22,11 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'figaro'
 
+#For the admin pane
+gem 'activeadmin', github: 'activeadmin'
+gem 'draper'
+gem 'pundit'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

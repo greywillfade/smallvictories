@@ -4,7 +4,9 @@ ActiveAdmin.register Status do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 # permit_params :list, :of, :attributes, :on, :model
-#
+
+	permit_params :user_id, :content, :private
+
 # or
 #
 # permit_params do
@@ -13,5 +15,6 @@ ActiveAdmin.register Status do
 #   permitted
 # end
 
+menu priority: 4
 
 end

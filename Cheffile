@@ -1,0 +1,24 @@
+site "http://community.opscode.com/api/v1"
+
+#cookbook 'apt' #Configures apt and apt services. Ships resources for managing apt repositories
+#cookbook 'build-essential' #Installs C compiler / build tools
+#cookbook 'mysql', '5.5.3'
+#cookbook 'ruby_build'
+#cookbook 'nodejs'
+#cookbook 'rbenv', git: 'https://disq.us/url?url=https%3A%2F%2Fgithub.com%2FRayMangum%2Fchef-rbenv%27%3AnT_QKYP1aakRTsRQw0Hx5FS0G3U&cuid=2296151'
+#cookbook 'vim'
+
+#cookbook 'apt' #Configures apt and apt services. Ships resources for managing apt repositories
+#cookbook 'build-essential' #Installs C compiler / build tools
+#cookbook "ruby_build", {:github=>"fnichol/chef-ruby_build", :ref=>"v0.7.2"}
+#cookbook "rbenv", {:github=>"fnichol/chef-rbenv"}
+#cookbook "git", {}
+#cookbook "redis", {:github=>"ctrabold/chef-redis"}
+#cookbook "vim", {}
+#cookbook "nodejs", {:github=>"mdxp/nodejs-cookbook"}
+
+cookbook "apt"
+cookbook "build-essential"
+cookbook 'ruby_build'
+cookbook 'nodejs'
+cookbook 'rbenv', git: 'https://github.com/aminin/chef-rbenv'

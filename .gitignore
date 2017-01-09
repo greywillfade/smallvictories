@@ -17,3 +17,8 @@
 
 # Ignore application configuration
 /config/application.yml
+
+#Ignore environment elements
+/cookbooks
+/.vagrant/
+/ubuntu-xenial-16.04-cloudimg-console.log

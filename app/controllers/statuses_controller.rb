@@ -14,7 +14,6 @@ class StatusesController < ApplicationController
   # GET /statuses/1
   # GET /statuses/1.json
   def show
-
     if can? :read, @status
       render action: :show
     else
@@ -92,7 +91,7 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:name, :content, :user_id, :private)
+      params.require(:status).permit(:name, :content, :user_id, :private, :categories_id)
     end
 
     def correct_user

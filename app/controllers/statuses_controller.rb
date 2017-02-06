@@ -8,7 +8,8 @@ class StatusesController < ApplicationController
   def index
     #@statuses = Status.all
     #@statuses = Status.where(:private => false).or(:user_id => current_user).paginate(page: params[:page], per_page: 50).order('created_at DESC')
-    @statuses = Status.where('private=? OR user_id=?', false, current_user).paginate(page: params[:page], per_page: 50).order('created_at DESC')
+    #@statuses = Status.where('private=? OR user_id=?', false, current_user).paginate(page: params[:page], per_page: 50).order('created_at DESC')
+    @statuses = Status.paginate(page: params[:page], per_page: 50).order('created_at DESC')
   end
 
   # GET /statuses/1
@@ -33,12 +34,10 @@ class StatusesController < ApplicationController
   # POST /statuses
   # POST /statuses.json
   def create
-
     @user = current_user
     @status = @user.statuses.build(status_params)
 
     #@status = Status.new(status_params)
-
     respond_to do |format|
       if @status.save
         format.html { redirect_to @status, notice: 'Status was successfully created.' }
@@ -91,7 +90,7 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:name, :content, :user_id, :private, :categories_id)
+      params.require(:status).permit(:name, :content, :user_id, :private, :category_id)
     end
 
     def correct_user

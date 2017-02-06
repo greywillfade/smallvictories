@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -23,7 +23,7 @@ gem 'omniauth-facebook'
 gem 'figaro'
 
 #For the admin pane
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'draper'
 gem 'pundit'
 
@@ -42,6 +42,9 @@ gem 'spring',        group: :development
 
 gem 'will_paginate'
 gem 'cancan' #authorization library
+
+
+gem 'jquery-ui-rails', '~> 4.2.1' #was getting error within activeadmin
 
 
 

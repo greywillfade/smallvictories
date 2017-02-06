@@ -15,9 +15,8 @@
 
   <%#=f.input :user_id, collection: User.all, label_method: :full_name, input_html: { class: 'input' } %>
   <%= f.input :content, input_html: { class: 'input' } %>
-  <%= collection_select(:categories_id, 0, Category.all, :id, :cat_name) %>
+  <%= collection_select(:status, :category_id, Category.all, :id, :cat_name, prompt: true) %>
 
-  <!--<%= f.input :private, as: :radio_buttons, :label => "Private?" %>-->
 
   <div class="actions">
     <%= f.submit 'Submit', :class => 'primary-button' %>

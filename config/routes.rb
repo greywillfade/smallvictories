@@ -4,28 +4,19 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get '/dashboard', to: 'profiles#dashboard', as: :dashboard
 
-
   get 'profiles/show'
 
   #devise_for :users
-
   get '/home', to: 'pages#home', as: :homepage
   get '/about', to: 'pages#about', as: :aboutpage
   get '/credits', to: 'pages#credits', as: :creditspage
 
-
   devise_for :users, :controllers => {:registrations => "users/registrations"}
-  #devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-
 
   devise_scope :user do
     get 'register', to: 'devise/registrations#new', as: :register
     get 'login', to: 'devise/sessions#new', as: :login
     get 'logout', to: 'devise/sessions#destroy', as: :logout
-
-    #delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
-    #get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
-    #get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
   end 
 
   resources :statuses
@@ -35,8 +26,8 @@ Rails.application.routes.draw do
 
   get '/:id', to: 'profiles#show'
 
-  
-  
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

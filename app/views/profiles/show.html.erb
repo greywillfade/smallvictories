@@ -29,6 +29,7 @@
 				</div>
 				<div class="<%= cycle('timeline-content', 'timeline-content right') -%>">
 					<p><%= status.content %></p>
+					<p><%= status.category.nil? ?  "No category" : status.category.cat_name %></p>
 					<p><b><%= time_ago_in_words(status.created_at) %> ago</b></p>
 
 					<%= link_to 'View', status_path(status), class: "button" %>
